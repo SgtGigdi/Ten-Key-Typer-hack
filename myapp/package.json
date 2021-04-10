@@ -1,0 +1,23 @@
+{
+  "name": "sgtgigdipackage",
+  "version": "1.0.0",
+  "description": "for all the lazy people in software apps",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SgtGigdi/Ten-Key-Typer-hack.git"
+  },
+  "author": "SgtGigdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SgtGigdi/Ten-Key-Typer-hack/issues"
+  },
+  "homepage": "https://github.com/SgtGigdi/Ten-Key-Typer-hack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html": "^1.0.0"
+  }
+}
