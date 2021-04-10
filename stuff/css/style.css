@@ -1,0 +1,109 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: #f2f2f2;
+	text-align: center;
+	
+	position: relative;
+	animation-name: loadscroll;
+	animation-duration: 1s
+}
+
+a:hover {
+	text-decoration: none;
+}
+#navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1;
+	opacity: 0.5;
+	transition: opacity 0.2s ease-out;
+	background-color: #ffead0;
+	border-bottom: 1px solid orange;
+	
+	animation-name: loadfade;
+	animation-duration: 2s
+}
+#welcome {
+	background-color: #fd7e14;
+	padding: 5%;
+	width: 100%;
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#footer {
+	background-color: #ff2400;
+	margin: 1% 0;
+	padding: 1%;
+}
+#footer a {
+	text-shadow: 1px 1px 1px #2d1408;
+}
+
+.frame-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.frame-container iframe, .frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.frame-container img, .frame .frame-img {
+  width: auto;
+  max-width: 100%;
+}
+
+.social-icons svg {
+	height: 1em;
+	margin: 0.5%;
+}
+.social-icons #freeCodeCamp_logo {
+	height: 1.2em;
+	margin: 0.2%;
+}
+.orange-bar {
+	background-color: #ff4700;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 1em;
+}
+.orange-bar a :not(button) {
+	text-shadow: 1.5px 1.5px 1.5px #2d1408;
+}
+.project-tile {
+	display: inline-flex;
+	flex-direction: column;
+	margin: 2%;
+	width: 40%;
+}
+#navbar:hover {
+	opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+.project-tile {
+	width: 80%
+}
+}
+
+@keyframes loadscroll { 
+  from{ bottom:-100px; opacity:0 } 
+  to  { bottom:0; opacity:1 }
+}
+@keyframes loadfade {
+  0%  { opacity:0 }
+  50% { opacity:0 }
+  100%{ opacity:0.5 }
+}
